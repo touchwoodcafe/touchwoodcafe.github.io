@@ -1,0 +1,160 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1;
+  -webkit-text-size-adjust: none; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font-family: "Courier New",Courier,"Lucida Sans Typewriter","Lucida Typewriter",monospace;
+  font-size: 14px;
+  line-height: 18px;}
+
+.wrapper {
+  width: 1100px;
+  height: 670px;
+  position: absolute;
+  margin: -365px 0 0 -570px;
+  left: 50%;
+  top: 50%; }
+
+header {
+  position: absolute;
+  left: 140px;
+  top: 90px;
+  max-width: 780px;
+  z-index: -1; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+h1:before {
+  content: "";
+  background: url(../images/leaf-sml.svg) no-repeat center center;
+  height: 75px;
+  width: 60px;
+  display: block;
+  position: absolute;
+  top: -68px;
+  left: 136px; }
+
+.no-svg h1:before {
+  background: url(../images/leaf-sml-fallback.png) no-repeat center center; }
+
+h1 span {
+  text-indent: -999px;
+  overflow: hidden;
+  width: 145px;
+  height: 130px;
+  display: inline-block;
+  background-image: url(../images/touchwood-swatch.svg);
+  background-repeat: no-repeat;
+  margin: 0 0 85px 105px; }
+
+.no-svg h1 span {
+  background-image: url(../images/touchwood-fallback.png); }
+
+.letter_1 {
+  background-position: top left; }
+
+.letter_2 {
+  background-position: top center; }
+
+.letter_3 {
+  background-position: top right; }
+
+.letter_4 {
+  background-position: center left; }
+
+.letter_5 {
+  background-position: center center; }
+
+.letter_6 {
+  background-position: center right; }
+
+.letter_7 {
+  background-position: bottom left; }
+
+.letter_8 {
+  background-position: bottom center;
+}
+
+.letter_9 {
+  background-position: bottom right; }
+
+section {
+  padding: 95px 0 0 70px;
+  letter-spacing: 1px; }
+
+section span {
+  letter-spacing: 4px; }
+@media screen and (max-height: 720px) {
+  .wrapper {
+    top: auto;
+    margin: 0 0 0 -570px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .wrapper {
+    width: 100%;
+    margin: -355px 0 0 0;
+    left: auto;
+    top: 50%; }
+
+  header {
+    left: 100px; }
+
+  h1:before {
+    left: 96px; }
+
+  h1 span {
+    margin: 0 0 85px 65px; }
+
+  section {
+    padding: 95px 0 0 20px; } }
+@media screen and (max-width: 400px) {
+  .wrapper {
+    top: auto;
+    margin: 0; }
+
+  header {
+    position: absolute;
+    left: 65px; }
+
+  h1:before {
+    left: 136px; }
+
+  h1 span {
+    margin: 0 0 20px 95px; } }
